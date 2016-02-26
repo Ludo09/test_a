@@ -1,0 +1,23 @@
+{
+  "name": "a",
+  "version": "1.0.0",
+  "description": "a lib",
+  "homepage": "https://github.com/angular/angular",
+  "bugs": "https://github.com/angular/angular",
+  "contributors": [
+    "Mr. A"
+  ],
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "awesome-typescript-loader": "latest",
+    "rimraf": "latest",
+    "typings": "latest",
+    "typescript": "latest",
+    "webpack": "1.12.13"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "prebuild": "npm update && npm run clean",
+    "build": "webpack --config webpack.conf.js"
+  }
+}
